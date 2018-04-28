@@ -1,0 +1,44 @@
+.text-input.fraction {
+    width: 150px;
+}
+.covered-width {
+    background: #EFEEEC !important;
+}
+.text-input {
+    width: 145px;
+    height: 34px;
+    border: 1px solid #ffca00;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.look {
+    width: 65px;
+    height: 40px;
+    background: #ffca03;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.filter-header h3 {
+    margin: 20px 0;
+}
+
+li.li-input{
+    width:23%;
+    float: left;
+}
+
+li.li-input strong{
+    font-size:14px;
+    font-weight: bold;
+}
+
+.select-imitate{
+    width: 165px !important;
+}
