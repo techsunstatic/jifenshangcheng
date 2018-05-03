@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>第五步</title>
@@ -9,190 +10,115 @@
     <link rel="stylesheet" href="css/timepicker/daterangepicker-bs3.css">
     <link rel="stylesheet" href="css/publick.css">
     <link rel="stylesheet" href="css/home.css">
+    <style>
+        .uhide{
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
-<!-- 公共头部1 -->
-<div class="global-top-navs">
-    <div class="main">
-        <ul class="right-nav">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li class="active price">奖励配置</li>
-            <li>总览</li>
-        </ul>
-        <div class="left-nav">
-            正在创建活动
-        </div>
-    </div>
-</div>
-<!-- 公共头部 end -->
-
-<div class="containers reward-content set-discount-rule" id="container">
-    <h3 class="title">第5步 POD设置</h3>
-    <p class="des">设定优惠券的有效期、POD类型、使用时段以及优惠券总数</p>
-    <div class="main-wraper trade-integral-rule clearfix">
-        <div class="left">
-            <h3 class="title">优惠券规则</h3>
-            <div class="product-card">
-                <h3 class="project-des">巨无霸第二件半价</h3>
-                <div class="project-img">
-                    <div class="figure">
-                        <img src="img/project-img.png" alt="">
-                    </div>
-                    <span class="name">巨无霸</span>
-                </div>
-                <a href="" class="look-detail">查看详情</a>
-            </div>
-            <button class="edit yello-btn">修改</button>
-        </div>
-        <!-- 总体位置 -->
-        <form class="right">
-            <h3 class="title">总体设置</h3>
-            <ul class="forms-wrap">
-                <li>
-                    <strong class="name">POD类型：</strong>
-                    <div class="select-imitate">
-                        <ul class="dropdown-nav">
-                            <!-- data-radiovalue 相当于单选框的value -->
-                            <li class="select-item-radio selected">DELIVERY</li>
-                            <li class="select-item-radio">Discount</li>
-                        </ul>
-                        <span class="dropdown-toggle">DELIVERY</span>
-                        <!-- 选中的value传递到隐藏域里面 -->
-                        <input type="hidden" value="" class="radio-value">
-                        <span class="right-btn">
-                                <i class="up">上</i>
-                                <i class="down">下</i>
-                            </span>
-                    </div>
-                </li>
-                <li>
-                    <strong class="name">有效期类型：</strong>
-                    <div class="select-imitate changeTemplate">
-                        <ul class="dropdown-nav">
-                            <!-- data-radiovalue 相当于单选框的value -->
-                            <li class="select-item-radio selected" data-viewid="1">固定有效期</li>
-                            <li class="select-item-radio" data-viewid="2">分发后有效期</li>
-                        </ul>
-                        <span class="dropdown-toggle">固定有效期</span>
-                        <!-- 选中的value传递到隐藏域里面 -->
-                        <input type="hidden" value="" class="radio-value">
-                        <span class="right-btn">
-                                <i class="up">上</i>
-                                <i class="down">下</i>
-                            </span>
-                    </div>
-                </li>
-                <li data-changeId="1">
-                    <strong class="name">生效时间：</strong>
-                    <input type="text" value="2018-04-08 - 2018-04-16" class="text-input form-control start_time">
-                </li>
-                <li data-changeId="2" style="display: none;">
-                    <strong class="name">间隔天数：</strong>
-                    <input type="number" value="1" class="text-input form-control">
-                </li>
-                <li>
-                    <strong class="name">每周生效日：</strong>
-                    <div class="checkbox-week">
-                        <label for="check1" class="weekday">
-                            <input type="checkbox" name="weekdays" id="check1" value="1">
-                            <span>周一</span>
-                        </label>
-                        <label for="check2" class="weekday">
-                            <input type="checkbox" name="weekdays" id="check2" value="2">
-                            <span>周二</span>
-                        </label>
-                        <label for="check3" class="weekday">
-                            <input type="checkbox" name="weekdays" id="check3" value="3">
-                            <span>周三</span>
-                        </label>
-                        <label for="check4" class="weekday">
-                            <input type="checkbox" name="weekdays" id="check4" value="4">
-                            <span>周四</span>
-                        </label>
-                        <label for="check5" class="weekday">
-                            <input type="checkbox" name="weekdays" id="check5" value="5">
-                            <span>周五</span>
-                        </label>
-                        <label for="check6" class="weekday">
-                            <input type="checkbox" name="weekdays" id="check6" value="6">
-                            <span>周六</span>
-                        </label>
-                        <label for="check7" class="weekday">
-                            <input type="checkbox" name="weekdays" id="check7" value="7">
-                            <span>周日</span>
-                        </label>
-                        <label for="check8" class="allcheck moni-label">
-                            <input type="checkbox" id="check8">
-                            <i></i>
-                            <span>全选</span>
-                        </label>
-                    </div>
-                </li>
-                <li>
-                    <strong class="name">生效时段：</strong>
-                    <div class="radio-time">
-                        <label for="radio1" class="radio-btn">
-                            <input type="radio" name="setDiytime" id="radio1">
-                            <span></span>早餐
-                        </label>
-                        <label for="check2" class="radio-btn">
-                            <input type="radio" name="setDiytime" id="check2">
-                            <span></span>午餐
-                        </label>
-                        <label for="check3" class="radio-btn">
-                            <input type="radio" name="setDiytime" id="check3">
-                            <span></span>下午茶
-                        </label>
-                        <label for="check4" class="radio-btn">
-                            <input type="radio" name="setDiytime" id="check4">
-                            <span></span>晚餐
-                        </label>
-                        <label for="check5" class="radio-btn">
-                            <input type="radio" name="setDiytime" id="check5">
-                            <span></span>夜宵
-                        </label>
-                        <label for="check6" class="radio-btn">
-                            <input type="radio" name="setDiytime" id="check6">
-                            <span></span>全天
-                        </label>
-                        <label for="diyTime" class="radio-btn">
-                            <input type="radio" name="setDiytime" id="diyTime">
-                            <span></span>自定义
-                        </label>
-                        <!-- <input type="" name="" class="diytime text-input form-control"> -->
-                    </div>
-                </li>
-                <li id="diytime_input" style="display: none;">
-                    <strong class="name">具体时间：</strong>
-                    <div class="text-input">
-                        <input type="text" value="" class="form-control start-time"> 开始 &rarr; 结束
-                        <input type="text" value="" class="form-control end-time">
-                    </div>
-                </li>
-                <li>
-                    <strong class="name">优惠券数量：</strong>
-                    <input type="number" value="10000" class="text-input">
-                </li>
-                <li>
-                    <strong class="name">发放时间：</strong>
-                    <div class="input-append">
-                        <input type="text" value="2018-03-30" class="select-time set-times" id="set-times">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </div>
-                </li>
+    <!-- 公共头部1 -->
+    <div class="global-top-navs">
+        <div class="main">
+            <ul class="right-nav">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="active price">创建积分商品</li>
             </ul>
-        </form>
+            <div class="left-nav">
+                正在创建活动
+            </div>
+        </div>
     </div>
-</div>
-<!-- 底部 -->
-<div class="reward-footer main-wraper set-discount-footer">
-    <a class="prev" href="javascript:history.go(-1)">上一步</a>
-    <a class="next yello-btn" href="">下一步</a>
-</div>
-
+    <!-- 公共头部 end -->
+    <div class="containers reward-content set-discount-rule" id="container">
+        <h3 class="title">第5步 创建积分商品</h3>
+        <p class="des">设定积分商品展示分类、兑换积分、上下架日期</p>
+        <div class="main-wraper trade-integral-rule clearfix">
+            <div class="left">
+                <h3 class="title">积分商品信息</h3>
+                <div class="product-card">
+                    <h3 class="project-des">巨无霸第二件半价</h3>
+                    <div class="project-img">
+                        <div class="figure">
+                            <img src="img/project-img.png" alt="">
+                        </div>
+                        <span class="name">巨无霸</span>
+                    </div>
+                    <a href="" class="look-detail">查看详情</a>
+                </div>
+            </div>
+            <!-- 总体位置 -->
+            <form class="right">
+                <h3 class="title">总体设置</h3>
+                <ul class="forms-wrap">
+                    <li>
+                        <strong class="name">商品分类：</strong>
+                        <div class="select-imitate">
+                            <ul class="dropdown-nav">
+                                <!-- data-radiovalue 相当于单选框的value -->
+                                <li class="select-item-radio selected">分类1</li>
+                                <li class="select-item-radio">分类2</li>
+                            </ul>
+                            <span class="dropdown-toggle">分类1</span>
+                            <!-- 选中的value传递到隐藏域里面 -->
+                            <input type="hidden" value="" class="radio-value">
+                            <span class="right-btn">
+                                <i class="up">上</i>
+                                <i class="down">下</i>
+                            </span>
+                        </div>
+                    </li>
+                    <li data-changeId="2">
+                        <strong class="name">兑换积分：</strong>
+                        <input type="number" value="1" class="text-input form-control">
+                    </li>
+                    <li>
+                        <strong class="name">上架日期：</strong>
+                        <div class="input-append">
+                            <input type="text" value="2018-03-30" class="select-time set-times" id="set-times">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong class="name">下架日期：</strong>
+                        <div class="input-append">
+                            <input type="text" value="2018-03-30" class="select-time set-times" id="set-times2">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong class="name">商品活动：</strong> 
+                        <label for="check1" class="weekday">
+                            <input type="checkbox" name="weekdays" id="check1" value="1"> 
+                        </label>
+                    </li>
+                     <li class="storeCheck uhide">
+                        <strong class="name">活动开始日期：</strong>
+                        <div class="input-append">
+                            <input type="text" value="2018-03-30" class="select-time set-times" id="set-times3">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                    </li>
+                    <li class="storeCheck uhide">
+                        <strong class="name">活动结束日期：</strong>
+                        <div class="input-append">
+                            <input type="text" value="2018-03-30" class="select-time set-times" id="set-times4">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="reward-footer main-wraper set-discount-footer">
+        <a class="prev" href="javascript:history.go(-1)">上一步</a>
+        <a class="next yello-btn" href="javascript:0">确认完成</a>
+    </div>
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -201,4 +127,14 @@
 <script src="js/timepicker/moment.js"></script>
 <script src="js/timepicker/daterangepicker.js"></script>
 <script src="js/createCoupon.js"></script>
+<script>
+    $("#check1").on("click",function(){
+        var check1=$("#check1").is(":checked"); 
+        if(check1){
+           $(".storeCheck").removeClass("uhide");
+        }else{
+            $(".storeCheck").addClass("uhide");
+        }
+    })
+</script>
 </html>

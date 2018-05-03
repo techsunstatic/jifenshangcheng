@@ -6,13 +6,22 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/publick.css">
     <link rel="stylesheet" href="css/home.css">
+    <style>
+      /*优惠券和下一步都居中*/
+        .discount{
+            margin:0 40% !important
+        }
+        .reward-footer{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <!-- 公共头部1 -->
 <div class="global-top-navs">
     <div class="main">
         <ul class="right-nav">
-            <li class="active price">奖励配置</li>
+            <li class="active price">优惠券配置</li>
             <li>2</li>
             <li>3</li>
             <li>4</li>
@@ -34,8 +43,8 @@
 
 <!-- 奖励配置 -->
 <div class="containers reward-content" id="container">
-    <h3 class="title">第1步 奖励配置</h3>
-    <p class="des">在这一步，您需要选择营销活动的奖励类型。</p>
+    <h3 class="title">第1步 优惠券配置</h3>
+    <p class="des">在这一步，您需要选择营销活动的优惠券类型。</p>
     <div class="main-wrap clearfix">
         <a href="" class="trade-list discount">
             <div class="figure">
@@ -46,9 +55,7 @@
     </div>
 </div>
 <div class="reward-footer main-wraper">
-    <a class="prev" href="javascript:history.go(-1)">上一步</a>
-    <!-- 可点击状态的时候要移除desable 类名 -->
-    <a href="twoPage.html" class="skip">跳过此步骤</a>
+    <a class="next yello-btn" href="twoPage.html">下一步</a>
 </div>
 </body>
 </html>
