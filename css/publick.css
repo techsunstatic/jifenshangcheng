@@ -373,7 +373,7 @@ button {
     bottom: -1px;
     right: 0;
     top: 0;
-    z-index: 11;
+    z-index: 1;
     background: #ffca00;
 }
 

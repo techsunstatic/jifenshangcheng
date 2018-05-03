@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMA货架详情</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/publick.css">
+    <link rel="stylesheet" href="css/CMAStoreDetail.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+</head>
+<body>
+<!-- 主要内容start -->
+<div class="containers main-wraper" id="container">
+    <div class="detailTitle clearfix">
+        <div class="detailTitleTop clearfix">
+            <h3 class="fl">
+                <i class=""></i>
+                <span>CMA货架管理 · </span>
+            </h3>
+            <h4 class="fl">积分商品详情</h4>
+        </div>
+        <div class="detailTitleBottom fr">
+            <ul class="clearfix">
+                <li class="stockBtn">
+                    <span>库存</span>
+                </li>
+                <li class="stopBtn">
+                    <span>停用</span>
+                </li>
+                <li class="onShelf">
+                    <span>上架</span>
+                </li>
+                <li class="lowerFrame">
+                    <span>下架</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goodsDetail">
+        <ul class="clearfix">
+            <li class="clearfix">
+                <div class="tips fl">积分商品展示分类</div>
+                <div class="showInfo fl">ID</div>
+            </li>
+            <li class="clearfix">
+                <div class="tips fl">兑换积分</div>
+                <div class="showInfo fl">27</div>
+            </li>
+            <li class="clearfix">
+                <div class="tips fl">上架日期</div>
+                <div class="showInfo fl">2018-03-03</div>
+            </li>
+            <li class="clearfix">
+                <div class="tips fl">下架日期</div>
+                <div class="showInfo fl">2018-04-17</div>
+            </li>
+            <li class="clearfix">
+                <div class="tips fl">活动开始日期</div>
+                <div class="showInfo fl">2018-03-03</div>
+            </li>
+            <li class="clearfix">
+                <div class="tips fl">活动结束日期</div>
+                <div class="showInfo fl">2018-04-17</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 主要内容end -->
+<!-- 弹窗 -->
+<div class="mask mask1">
+    <div class="stock">
+        <div class="Inner">
+            <div class="clearfix stockTitle">
+                <div class="fl tit">同步优惠券</div>
+                <i class="fr fa fa-times-circle-o"></i>
+            </div>
+            <ul class="stockList">
+                <li class="clearfix">
+                    <div class="fl tips">积分商品名称：</div>
+                    <input type="text" disabled/>
+                </li>
+                <li class="clearfix">
+                    <div class="fl tips">当前剩余库存：</div>
+                    <input type="number" disabled/>
+                </li>
+                <li class="clearfix">
+                    <div class="fl tips">历史累计总数：</div>
+                    <input type="number" disabled/>
+                </li>
+                <li class="clearfix">
+                    <div class="fl tips">本次新增库存：</div>
+                    <input type="number"/>
+                </li>
+            </ul>
+            <table class="stockTb">
+                <thead>
+                <tr>
+                    <th>操作日期</th>
+                    <th>本次新增库存</th>
+                    <th>实际增加数量</th>
+                    <th>失败数量</th>
+                    <th>操作人员</th>
+                    <th>状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2018-04-27 11:43</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>rose</td>
+                    <td>完成</td>
+                </tr>
+                <tr>
+                    <td>2018-04-27 11:43</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>rose</td>
+                    <td>完成</td>
+                </tr>
+                <tr>
+                    <td>2018-04-27 11:43</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>rose</td>
+                    <td>完成</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="sureBtn">确定</div>
+        </div>
+    </div>
+</div>
+<div class="mask mask2">
+    <div class="commonDialog">
+        <div class="Inner">
+            <i class="fa fa-times-circle-o closeBtn"></i>
+            <div class="tit">积分商品停用以后将不可再上架，请确认停用该商品？</div>
+            <div class="sureBtn">确定</div>
+        </div>
+    </div>
+</div>
+<div class="mask mask3">
+    <div class="commonDialog">
+        <div class="Inner">
+            <i class="fa fa-times-circle-o closeBtn"></i>
+            <div class="tit">确 定 上 架 该 商 品 ？</div>
+            <div class="sureBtn">确定</div>
+        </div>
+    </div>
+</div>
+<div class="mask mask4">
+    <div class="commonDialog">
+        <div class="Inner">
+            <i class="fa fa-times-circle-o closeBtn"></i>
+            <div class="tit">确 定 下 架 该 商 品 ？</div>
+            <div class="sureBtn">确定</div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗 -->
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/createCoupon.js"></script>
+<script>
+    $(".stockBtn").click(function () {
+        $(".mask1").show();
+    });
+    $(".fa-times-circle-o").click(function () {
+        $(".mask1").hide();
+    });
+    $(".stopBtn").click(function () {
+        $(".mask2").show();
+    });
+    $(".closeBtn").click(function () {
+        $(".mask2").hide();
+    });
+    $(".onShelf").click(function () {
+        $(".mask3").show();
+    });
+    $(".closeBtn").click(function () {
+        $(".mask3").hide();
+    });
+    $(".lowerFrame").click(function () {
+        $(".mask4").show();
+    });
+    $(".closeBtn").click(function () {
+        $(".mask4").hide();
+    });
+</script>
+</html>

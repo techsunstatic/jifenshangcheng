@@ -1,0 +1,33 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/**弹窗样式*/
+.mask{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.mask .Inner{
+    padding: 15px 25px;
+}
+.mask .sureBtn{
+    width: 50px;
+    line-height:  30px;
+    background: #ffca00;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+.mask .closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}

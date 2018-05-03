@@ -15,7 +15,7 @@
 
 .look {
     width: 65px;
-    height: 40px;
+    height: 34px;
     background: #ffca03;
     font-size: 14px;
     font-weight: bold;
@@ -41,4 +41,14 @@ li.li-input strong{
 
 .select-imitate{
     width: 165px !important;
+}
+.addGood{
+    width: 65px;
+    height: 34px;
+    background: #ffca03;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 34px;
+    margin: 15px 10px 0 0;
 }
