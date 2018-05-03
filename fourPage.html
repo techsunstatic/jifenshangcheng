@@ -121,7 +121,9 @@
             <div class="right">
                 <h3 class="title">手动创建一个新的门店列表</h3>
                 <span class="shop-icon"></span>
-                <button class="created-btn defalt-hover" type="button"><a href="createStoreList.html">创建新的门店列表</a></button>
+                <button class="created-btn defalt-hover" type="button" id="confirmCreate">
+                   创建新的门店列表
+                </button>
             </div>
         </div>
     </div>
@@ -229,4 +231,10 @@
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/createCoupon.js"></script>
+<script>
+    //确认创建
+    $("#confirmCreate").on("click",function(){ 
+        window.location.href="createStoreList.html";
+    })
+</script>
 </html>

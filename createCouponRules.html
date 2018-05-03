@@ -430,8 +430,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default close-btn" data-dismiss="modal">取消</button>
-                    <button type="button" class="yello-btn">
-                       <a class="next yello-btn" href="threePage.html">OK，准确无误</a> 
+                    <button type="button" class="yello-btn" id="confirmBtn">
+                       OK，准确无误
                     </button>
                 </div>
             </div>
@@ -471,4 +471,10 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/createCoupon.js"></script>
+<script>
+    //确认创建
+    $("#confirmBtn").on("click",function(){ 
+        window.location.href="threePage.html";
+    })
+</script>
 </html>

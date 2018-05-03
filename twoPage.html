@@ -19,7 +19,7 @@
             <li>3</li>
             <li>4</li>
             <li>5</li>
-            <li>总览</li>
+            <!-- <li>总览</li> -->
         </ul>
         <div class="left-nav">
             正在创建活动
@@ -156,8 +156,8 @@
             <div class="right">
                 <h3 class="title">手动创建一个新的优惠券规则</h3>
                 <span class="coupon-icon"></span>
-                <button class="created-btn defalt-hover" type="button">
-                    <a href="createCouponRules.html">创建新的优惠券规则</a>
+                <button class="created-btn defalt-hover" type="button" id="createRule">
+                   创建新的优惠券规则
                 </button>
             </div>
         </div>
@@ -200,8 +200,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default close-btn" data-dismiss="modal">取消</button>
-                    <button type="button" class="yello-btn">
-                       <a class="next yello-btn" href="threePage.html">OK，准确无误</a> 
+                    <button type="button" class="yello-btn" id="confirm">
+                        OK，准确无误
                     </button>
                 </div>
             </div>
@@ -242,4 +242,15 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/createCoupon.js"></script>
+<script>
+    //确认创建
+    $("#createRule").on("click",function(){ 
+        window.location.href="createCouponRules.html";
+    })
+
+    //confirm
+     $("#confirm").on("click",function(){ 
+        window.location.href="threePage.html";
+    })
+</script>
 </html>
